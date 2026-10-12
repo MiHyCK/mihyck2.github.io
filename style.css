@@ -6,9 +6,9 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #ffffff;
-    color: #222;
+    color: #000;
     line-height: 1.5;
     min-height: 100vh;
     display: flex;
@@ -16,8 +16,7 @@ body {
 }
 
 a {
-    color: #0b3d91;
-    text-decoration: none;
+    color: #0000ee;
 }
 
 a:hover {
@@ -27,8 +26,7 @@ a:hover {
 /* ===== Шапка (на всю ширину окна) ===== */
 #main-header {
     width: 100%;
-    background-color: #4a90d9;
-    color: #ffffff;
+    background-color: #8ab4e8;
     padding: 10px 0;
 }
 
@@ -46,7 +44,7 @@ a:hover {
 .logo {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .logo img {
@@ -54,7 +52,6 @@ a:hover {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #ffffff;
 }
 
 .site-name {
@@ -71,12 +68,7 @@ a:hover {
 }
 
 #main-nav a {
-    color: #ffffff;
-    font-size: 15px;
-}
-
-#main-nav a:hover {
-    text-decoration: underline;
+    color: #0000ee;
 }
 
 /* ===== Основной контент ===== */
@@ -90,14 +82,12 @@ a:hover {
 
 .section-block {
     background-color: #8ab4e8;
-    border-radius: 6px;
-    padding: 15px 18px;
+    padding: 15px;
     margin-bottom: 15px;
 }
 
 .section-block h2 {
     margin-bottom: 10px;
-    color: #12294f;
     font-size: 18px;
 }
 
@@ -115,9 +105,7 @@ a:hover {
 }
 
 .map-label {
-    font-size: 16px;
     margin-bottom: 6px;
-    color: #12294f;
 }
 
 .map-wrapper img {
@@ -134,14 +122,13 @@ a:hover {
 
 #data-table th,
 #data-table td {
-    border: 1px solid #2b4a7e;
+    border: 1px solid #000;
     padding: 8px 10px;
     text-align: center;
 }
 
 #data-table thead th {
-    background-color: #1a3f7a;
-    color: #ffffff;
+    background-color: #cccccc;
 }
 
 #data-table tbody tr:nth-child(odd) {
@@ -149,14 +136,13 @@ a:hover {
 }
 
 #data-table tbody tr:nth-child(even) {
-    background-color: #dbe6f5;
+    background-color: #e6e6e6;
 }
 
 /* ===== Форма ===== */
 #form form {
     background-color: #ffffff;
-    padding: 15px;
-    border-radius: 6px;
+    padding: 10px;
 }
 
 #form label {
@@ -172,30 +158,20 @@ a:hover {
 #form textarea {
     width: 100%;
     max-width: 400px;
-    padding: 6px 8px;
+    padding: 4px 6px;
     margin-top: 4px;
-    border: 1px solid #9bb2cc;
-    border-radius: 4px;
+    border: 1px solid #666;
     font-family: inherit;
 }
 
 #form textarea {
     min-height: 80px;
-    resize: vertical;
 }
 
 #form input[type="submit"] {
     margin-top: 10px;
-    padding: 8px 20px;
-    background-color: #1a3f7a;
-    color: #ffffff;
-    border: none;
-    border-radius: 4px;
+    padding: 6px 16px;
     cursor: pointer;
-}
-
-#form input[type="submit"]:hover {
-    background-color: #12294f;
 }
 
 /* ===== Подвал (на всю ширину окна) ===== */
@@ -210,5 +186,4 @@ a:hover {
     max-width: 960px;
     margin: 0 auto;
     padding: 0 15px;
-    color: #12294f;
 }
