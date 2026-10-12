@@ -1,4 +1,4 @@
-
+/* ===== Базовые настройки ===== */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -25,7 +25,7 @@ a:hover {
     text-decoration: underline;
 }
 
-
+/* ===== Шапка (на всю ширину окна) ===== */
 #main-header {
     width: 100%;
     background-color: #4a90d9;
@@ -67,7 +67,7 @@ a:hover {
     letter-spacing: 0.5px;
 }
 
-
+/* ===== Меню ===== */
 #main-nav ul {
     list-style: none;
     display: flex;
@@ -89,7 +89,7 @@ a:hover {
     color: #ffffff;
 }
 
-
+/* ===== Основной контент ===== */
 #content {
     flex: 1 0 auto;
     width: 100%;
@@ -142,7 +142,7 @@ a:hover {
     border-radius: 6px;
 }
 
-
+/* ===== Таблица ===== */
 #data-table {
     width: 100%;
     border-collapse: collapse;
@@ -161,4 +161,120 @@ a:hover {
 }
 
 #data-table thead th {
-    background
+    background-color: #1a3f7a;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#data-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+#data-table tbody tr:nth-child(even) {
+    background-color: #dbe6f5;
+}
+
+#data-table tbody tr:hover {
+    background-color: #c2d6ef;
+}
+
+/* ===== Форма ===== */
+#form form {
+    background-color: #ffffff;
+    padding: 18px 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+#form label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+#form input[type="text"],
+#form input[type="tel"],
+#form input[type="email"],
+#form input[type="date"],
+#form select,
+#form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 7px 9px;
+    margin-top: 4px;
+    border: 1px solid #9bb2cc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px;
+    background-color: #fbfdff;
+}
+
+#form input[type="text"]:focus,
+#form input[type="tel"]:focus,
+#form input[type="email"]:focus,
+#form input[type="date"]:focus,
+#form select:focus,
+#form textarea:focus {
+    outline: none;
+    border-color: #1a3f7a;
+    box-shadow: 0 0 0 2px rgba(26, 63, 122, 0.2);
+}
+
+#form textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+#form input[type="submit"] {
+    margin-top: 12px;
+    padding: 9px 24px;
+    background-color: #1a3f7a;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#form input[type="submit"]:hover {
+    background-color: #12294f;
+}
+
+/* ===== Подвал (на всю ширину окна) ===== */
+#main-footer {
+    flex-shrink: 0;
+    width: 100%;
+    background-color: #8ab4e8;
+    border-top: 2px solid #6d9bd6;
+    padding: 15px 0;
+}
+
+#main-footer p {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+    color: #12294f;
+    font-size: 15px;
+}
+
+/* ===== Адаптивность ===== */
+@media (max-width: 600px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #main-nav ul {
+        gap: 10px;
+    }
+
+    .site-name {
+        font-size: 18px;
+    }
+
+    .logo img {
+        width: 55px;
+        height: 55px;
+    }
+}
